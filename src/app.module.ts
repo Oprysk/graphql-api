@@ -11,6 +11,7 @@ import { PrismaService } from './prisma/prisma.service';
       driver: ApolloDriver,
       autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
       sortSchema: true,
+      playground: true,
     }),
     TodoModule,
   ],
