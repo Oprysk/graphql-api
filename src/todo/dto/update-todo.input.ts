@@ -1,5 +1,6 @@
-import { CreateTodoInput } from './create-todo.input';
 import { InputType, Field, Int } from '@nestjs/graphql';
+
+import { CreateTodoInput } from './create-todo.input';
 
 @InputType()
 export class UpdateTodoInput extends CreateTodoInput {

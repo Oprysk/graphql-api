@@ -1,7 +1,8 @@
+import { join } from 'path';
 import { Module } from '@nestjs/common';
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { GraphQLModule } from '@nestjs/graphql';
-import { join } from 'path';
+
 import { TodoModule } from './todo/todo.module';
 import { PrismaService } from './prisma/prisma.service';
 

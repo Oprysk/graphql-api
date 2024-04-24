@@ -1,7 +1,8 @@
 import { Module } from '@nestjs/common';
+
+import { PrismaService } from '../prisma/prisma.service';
 import { TodoService } from './todo.service';
 import { TodoResolver } from './todo.resolver';
-import { PrismaService } from '../prisma/prisma.service';
 
 @Module({
   providers: [TodoResolver, TodoService, PrismaService],
